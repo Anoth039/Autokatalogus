@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Féléves beadandó</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="image/ikon.jpg">
+</head>
+<body>
+  <header>
+    <h1>Autók katalógusa</h1>
+  </header>
+  <main>
+    <section id="car-list" class="grid"></section>
+    <div id="details-and-form">
+    <section id="car-details" class="hidden"></section>
+    <section id="car-form-section">
+      <h2>Autó hozzáadása / szerkesztése</h2>
+      <form id="car-form">
+        <input type="hidden" id="car-id">
+        <label>Márka: <input type="text" id="brand" required></label>
+        <label>Modell: <input type="text" id="model" required></label>
+        <label>Elektromos: 
+          <select id="electric">
+          <option value="false">Nem</option>
+          <option value="true">Igen</option>
+          </select>
+        </label>
+        <label>Fogyasztás: <input type="number" step="0.1" id="fuelUse"></label>
+        <label>Évjárat: <input type="text" id="dayOfCommission" required></label>
+        <label>Tulajdonos: <input type="text" id="owner" required></label>
+        <button type="submit">Mentés</button>
+      </form>
+    </section>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
